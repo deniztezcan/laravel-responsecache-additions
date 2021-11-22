@@ -1,8 +1,8 @@
 # Laravel Response Cache additions
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v//deniztezcan/laravel-responsecache-additions.svg?style=flat-square)](https://packagist.org/packages//deniztezcan/laravel-responsecache-additions)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/deniztezcan/laravel-responsecache-additions.svg?style=flat-square)](https://packagist.org/packages/deniztezcan/laravel-responsecache-additions)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Total Downloads](https://img.shields.io/packagist/dt//deniztezcan/laravel-responsecache-additions.svg?style=flat-square)](https://packagist.org/packages//deniztezcan/laravel-responsecache-additions)
+[![Total Downloads](https://img.shields.io/packagist/dt/deniztezcan/laravel-responsecache-additions.svg?style=flat-square)](https://packagist.org/packages/deniztezcan/laravel-responsecache-additions)
 
 Additions to Spatie's speed up a Laravel app by caching the entire response package so that Mobile and Desktop visitors view different websites.
 
