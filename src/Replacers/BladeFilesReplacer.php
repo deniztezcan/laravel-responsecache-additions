@@ -22,11 +22,13 @@ class BladeFilesReplacer extends Replacer
             $view       = view($this->realTimeView);
             preg_match($regex, $content, $matches);
             
-            $response->setContent(str_replace(
-                $matches,
-                $view->render(),
-                $response->getContent()
-            ));
+            if(isset($matches[0])){
+                $response->setContent(str_replace(
+                    $matches[0],
+                    $view->render(),
+                    $response->getContent()
+                ));
+            }
         } else {
             foreach ($this->htmlTag as $key => $tag) {
                 $content    = $response->getContent();
@@ -34,11 +36,13 @@ class BladeFilesReplacer extends Replacer
                 $view       = view($this->realTimeView[$key]);
                 preg_match($regex, $content, $matches);
                 
-                $response->setContent(str_replace(
-                    $matches,
-                    $view->render(),
-                    $response->getContent()
-                ));
+                if(isset($matches[0])){
+                    $response->setContent(str_replace(
+                        $matches[0],
+                        $view->render(),
+                        $response->getContent()
+                    ));
+                }
             }
         }
     }
@@ -55,11 +59,13 @@ class BladeFilesReplacer extends Replacer
             $view       = view($this->realTimeView);
             preg_match($regex, $content, $matches);
             
-            $response->setContent(str_replace(
-                $matches,
-                $view->render(),
-                $response->getContent()
-            ));
+            if(isset($matches[0])){
+                $response->setContent(str_replace(
+                    $matches[0],
+                    $view->render(),
+                    $response->getContent()
+                ));
+            }
         } else {
             foreach ($this->htmlTag as $key => $tag) {
                 $content    = $response->getContent();
@@ -67,11 +73,13 @@ class BladeFilesReplacer extends Replacer
                 $view       = view($this->realTimeView[$key]);
                 preg_match($regex, $content, $matches);
                 
-                $response->setContent(str_replace(
-                    $matches,
-                    $view->render(),
-                    $response->getContent()
-                ));
+                if(isset($matches[0])){
+                    $response->setContent(str_replace(
+                        $matches[0],
+                        $view->render(),
+                        $response->getContent()
+                    ));
+                }
             }
         }
     }
