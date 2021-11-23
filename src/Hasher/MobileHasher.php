@@ -6,7 +6,7 @@ use Spatie\ResponseCache\Hasher\DefaultHasher;
 use Jenssegers\Agent\Agent;
 use Illuminate\Http\Request;
 
-class MobileHasher implements DefaultHasher
+class MobileHasher extends DefaultHasher
 {
 	public function getHashFor(Request $request): string
     {
