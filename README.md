@@ -52,7 +52,7 @@ namespace App\Replacers;
 
 use DenizTezcan\ResponseCache\Replacers\BladeFilesReplacer;
 
-class FooReplacer implements BladeFilesReplacer
+class FooReplacer extends BladeFilesReplacer
 {
 	protected string | array $htmlTag = 'fake-html-tag'; // html tag without the <> in string or array format
     protected string | array $realTimeView = 'partials.fake-blade-loc'; // blade path string or array format
