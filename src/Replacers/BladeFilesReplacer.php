@@ -5,7 +5,7 @@ namespace DenizTezcan\ResponseCache\Replacers;
 use Symfony\Component\HttpFoundation\Response;
 use Spatie\ResponseCache\Replacers\Replacer;
 
-class BladeFilesReplacer extends Replacer
+class BladeFilesReplacer implements Replacer
 {
     protected string | array $htmlTag = 'fake-html-tag'; // html tag without the <> in string or array format
     protected string | array $realTimeView = 'partials.fake-blade-loc'; // blade path string or array format
